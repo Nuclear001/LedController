@@ -26,14 +26,10 @@ namespace Arduino_Serial_Host_CS
             Console.WriteLine("The following serial ports were found:");
 
             // Display each port name to the console.
-            flowLayoutPanel1.Controls.Clear();
+            listView1.Items.Clear();
             foreach (string port in ports)
             {
-                Label lbl_COM = new Label();
-                lbl_COM.Name = "textBox1" + port;
-                lbl_COM.Text = port;
-                lbl_COM.Tag = port;
-                flowLayoutPanel1.Controls.Add(lbl_COM);
+                listView1.Items.Add(port);
 
                 Console.WriteLine(port);
             }

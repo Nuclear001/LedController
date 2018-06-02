@@ -57,6 +57,7 @@
             this.picBox_2_1 = new System.Windows.Forms.PictureBox();
             this.lbl_delay = new System.Windows.Forms.Label();
             this.btn_delay_up = new System.Windows.Forms.Button();
+            this.timer_display_V3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).BeginInit();
@@ -364,6 +365,11 @@
             this.btn_delay_up.Text = "button1";
             this.btn_delay_up.UseVisualStyleBackColor = true;
             // 
+            // timer_display_V3
+            // 
+            this.timer_display_V3.Interval = 10000;
+            this.timer_display_V3.Tick += new System.EventHandler(this.timer_display_V3_Tick);
+            // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -438,5 +444,6 @@
         private System.Windows.Forms.PictureBox picBox_2_1;
         private System.Windows.Forms.Label lbl_delay;
         private System.Windows.Forms.Button btn_delay_up;
+        private System.Windows.Forms.Timer timer_display_V3;
     }
 }
