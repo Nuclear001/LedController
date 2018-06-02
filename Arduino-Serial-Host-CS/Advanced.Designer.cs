@@ -55,6 +55,8 @@
             this.timer_display_V2 = new System.Windows.Forms.Timer(this.components);
             this.picBox_2_2 = new System.Windows.Forms.PictureBox();
             this.picBox_2_1 = new System.Windows.Forms.PictureBox();
+            this.lbl_delay = new System.Windows.Forms.Label();
+            this.btn_delay_up = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).BeginInit();
@@ -120,7 +122,7 @@
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(337, 62);
+            this.numericUpDown1.Location = new System.Drawing.Point(98, 71);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -132,7 +134,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(84, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(145, 20);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.Value = new decimal(new int[] {
             1000,
@@ -278,7 +280,7 @@
             // 
             // trackBar_saturation
             // 
-            this.trackBar_saturation.Location = new System.Drawing.Point(625, 387);
+            this.trackBar_saturation.Location = new System.Drawing.Point(625, 506);
             this.trackBar_saturation.Maximum = 1000;
             this.trackBar_saturation.Name = "trackBar_saturation";
             this.trackBar_saturation.Size = new System.Drawing.Size(338, 45);
@@ -291,7 +293,7 @@
             this.button_enables_overide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_enables_overide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button_enables_overide.ForeColor = System.Drawing.Color.Gray;
-            this.button_enables_overide.Location = new System.Drawing.Point(453, 506);
+            this.button_enables_overide.Location = new System.Drawing.Point(474, 557);
             this.button_enables_overide.Name = "button_enables_overide";
             this.button_enables_overide.Size = new System.Drawing.Size(145, 43);
             this.button_enables_overide.TabIndex = 20;
@@ -343,11 +345,32 @@
             this.picBox_2_1.TabIndex = 28;
             this.picBox_2_1.TabStop = false;
             // 
+            // lbl_delay
+            // 
+            this.lbl_delay.AutoSize = true;
+            this.lbl_delay.Location = new System.Drawing.Point(273, 71);
+            this.lbl_delay.Name = "lbl_delay";
+            this.lbl_delay.Size = new System.Drawing.Size(31, 13);
+            this.lbl_delay.TabIndex = 29;
+            this.lbl_delay.Text = "1000";
+            // 
+            // btn_delay_up
+            // 
+            this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delay_up.Location = new System.Drawing.Point(342, 63);
+            this.btn_delay_up.Name = "btn_delay_up";
+            this.btn_delay_up.Size = new System.Drawing.Size(59, 21);
+            this.btn_delay_up.TabIndex = 30;
+            this.btn_delay_up.Text = "button1";
+            this.btn_delay_up.UseVisualStyleBackColor = true;
+            // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(975, 614);
+            this.Controls.Add(this.btn_delay_up);
+            this.Controls.Add(this.lbl_delay);
             this.Controls.Add(this.picBox_2_1);
             this.Controls.Add(this.picBox_2_2);
             this.Controls.Add(this.btn_AverageDisplayColor_V2);
@@ -413,5 +436,7 @@
         private System.Windows.Forms.Timer timer_display_V2;
         private System.Windows.Forms.PictureBox picBox_2_2;
         private System.Windows.Forms.PictureBox picBox_2_1;
+        private System.Windows.Forms.Label lbl_delay;
+        private System.Windows.Forms.Button btn_delay_up;
     }
 }

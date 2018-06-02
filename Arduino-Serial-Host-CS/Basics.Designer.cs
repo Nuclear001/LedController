@@ -42,16 +42,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.trackBar_saturation = new System.Windows.Forms.TrackBar();
             this.trackBar_brightness = new System.Windows.Forms.TrackBar();
-            this.cSlider_Blue = new ColorSlider.ColorSlider();
-            this.cSlider_Green = new ColorSlider.ColorSlider();
-            this.cSlider_Red = new ColorSlider.ColorSlider();
             this.btn_auto_refresh_rgbSlider = new System.Windows.Forms.Button();
             this.picBox_Color = new System.Windows.Forms.PictureBox();
             this.timer_colorRefresh = new System.Windows.Forms.Timer(this.components);
+            this.cSlider_Red = new System.Windows.Forms.TrackBar();
+            this.cSlider_Green = new System.Windows.Forms.TrackBar();
+            this.cSlider_Blue = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_Color)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cSlider_Red)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cSlider_Green)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cSlider_Blue)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_connect
@@ -206,111 +209,6 @@
             this.trackBar_brightness.Size = new System.Drawing.Size(338, 45);
             this.trackBar_brightness.TabIndex = 21;
             // 
-            // cSlider_Blue
-            // 
-            this.cSlider_Blue.BackColor = System.Drawing.Color.Transparent;
-            this.cSlider_Blue.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.cSlider_Blue.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
-            this.cSlider_Blue.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-            this.cSlider_Blue.ColorSchema = ColorSlider.ColorSlider.ColorSchemas.GreenColors;
-            this.cSlider_Blue.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(255)))));
-            this.cSlider_Blue.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(255)))));
-            this.cSlider_Blue.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(255)))));
-            this.cSlider_Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.cSlider_Blue.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cSlider_Blue.LargeChange = ((uint)(5u));
-            this.cSlider_Blue.Location = new System.Drawing.Point(573, 310);
-            this.cSlider_Blue.Maximum = 255;
-            this.cSlider_Blue.MouseEffects = false;
-            this.cSlider_Blue.Name = "cSlider_Blue";
-            this.cSlider_Blue.ScaleDivisions = 10;
-            this.cSlider_Blue.ScaleSubDivisions = 5;
-            this.cSlider_Blue.ShowDivisionsText = false;
-            this.cSlider_Blue.ShowSmallScale = false;
-            this.cSlider_Blue.Size = new System.Drawing.Size(338, 46);
-            this.cSlider_Blue.SmallChange = ((uint)(1u));
-            this.cSlider_Blue.TabIndex = 22;
-            this.cSlider_Blue.ThumbInnerColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Blue.ThumbOuterColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Blue.ThumbPenColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Blue.ThumbRoundRectSize = new System.Drawing.Size(1, 1);
-            this.cSlider_Blue.ThumbSize = new System.Drawing.Size(10, 30);
-            this.cSlider_Blue.TickAdd = 0F;
-            this.cSlider_Blue.TickColor = System.Drawing.Color.White;
-            this.cSlider_Blue.TickDivide = 0F;
-            this.cSlider_Blue.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.cSlider_Blue.Value = 40;
-            // 
-            // cSlider_Green
-            // 
-            this.cSlider_Green.BackColor = System.Drawing.Color.Transparent;
-            this.cSlider_Green.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.cSlider_Green.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
-            this.cSlider_Green.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-            this.cSlider_Green.ColorSchema = ColorSlider.ColorSlider.ColorSchemas.GreenColors;
-            this.cSlider_Green.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(201)))), ((int)(((byte)(46)))));
-            this.cSlider_Green.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(201)))), ((int)(((byte)(46)))));
-            this.cSlider_Green.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(201)))), ((int)(((byte)(46)))));
-            this.cSlider_Green.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.cSlider_Green.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cSlider_Green.LargeChange = ((uint)(5u));
-            this.cSlider_Green.Location = new System.Drawing.Point(573, 258);
-            this.cSlider_Green.Maximum = 255;
-            this.cSlider_Green.MouseEffects = false;
-            this.cSlider_Green.Name = "cSlider_Green";
-            this.cSlider_Green.ScaleDivisions = 10;
-            this.cSlider_Green.ScaleSubDivisions = 5;
-            this.cSlider_Green.ShowDivisionsText = false;
-            this.cSlider_Green.ShowSmallScale = false;
-            this.cSlider_Green.Size = new System.Drawing.Size(338, 46);
-            this.cSlider_Green.SmallChange = ((uint)(1u));
-            this.cSlider_Green.TabIndex = 23;
-            this.cSlider_Green.ThumbInnerColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Green.ThumbOuterColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Green.ThumbPenColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Green.ThumbRoundRectSize = new System.Drawing.Size(1, 1);
-            this.cSlider_Green.ThumbSize = new System.Drawing.Size(10, 30);
-            this.cSlider_Green.TickAdd = 0F;
-            this.cSlider_Green.TickColor = System.Drawing.Color.White;
-            this.cSlider_Green.TickDivide = 0F;
-            this.cSlider_Green.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.cSlider_Green.Value = 40;
-            // 
-            // cSlider_Red
-            // 
-            this.cSlider_Red.BackColor = System.Drawing.Color.Transparent;
-            this.cSlider_Red.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.cSlider_Red.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
-            this.cSlider_Red.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-            this.cSlider_Red.ColorSchema = ColorSlider.ColorSlider.ColorSchemas.GreenColors;
-            this.cSlider_Red.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(15)))), ((int)(((byte)(0)))));
-            this.cSlider_Red.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(15)))), ((int)(((byte)(0)))));
-            this.cSlider_Red.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(15)))), ((int)(((byte)(0)))));
-            this.cSlider_Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.cSlider_Red.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cSlider_Red.LargeChange = ((uint)(5u));
-            this.cSlider_Red.Location = new System.Drawing.Point(573, 215);
-            this.cSlider_Red.Maximum = 255;
-            this.cSlider_Red.MouseEffects = false;
-            this.cSlider_Red.Name = "cSlider_Red";
-            this.cSlider_Red.ScaleDivisions = 10;
-            this.cSlider_Red.ScaleSubDivisions = 5;
-            this.cSlider_Red.ShowDivisionsText = false;
-            this.cSlider_Red.ShowSmallScale = false;
-            this.cSlider_Red.Size = new System.Drawing.Size(338, 46);
-            this.cSlider_Red.SmallChange = ((uint)(1u));
-            this.cSlider_Red.TabIndex = 24;
-            this.cSlider_Red.ThumbInnerColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Red.ThumbOuterColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Red.ThumbPenColor = System.Drawing.SystemColors.AppWorkspace;
-            this.cSlider_Red.ThumbRoundRectSize = new System.Drawing.Size(1, 1);
-            this.cSlider_Red.ThumbSize = new System.Drawing.Size(10, 30);
-            this.cSlider_Red.TickAdd = 0F;
-            this.cSlider_Red.TickColor = System.Drawing.Color.White;
-            this.cSlider_Red.TickDivide = 0F;
-            this.cSlider_Red.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.cSlider_Red.Value = 40;
-            // 
             // btn_auto_refresh_rgbSlider
             // 
             this.btn_auto_refresh_rgbSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
@@ -338,16 +236,40 @@
             // 
             this.timer_colorRefresh.Tick += new System.EventHandler(this.timer_colorRefresh_Tick);
             // 
+            // cSlider_Red
+            // 
+            this.cSlider_Red.Location = new System.Drawing.Point(513, 219);
+            this.cSlider_Red.Maximum = 255;
+            this.cSlider_Red.Name = "cSlider_Red";
+            this.cSlider_Red.Size = new System.Drawing.Size(398, 45);
+            this.cSlider_Red.TabIndex = 29;
+            // 
+            // cSlider_Green
+            // 
+            this.cSlider_Green.Location = new System.Drawing.Point(513, 270);
+            this.cSlider_Green.Maximum = 255;
+            this.cSlider_Green.Name = "cSlider_Green";
+            this.cSlider_Green.Size = new System.Drawing.Size(398, 45);
+            this.cSlider_Green.TabIndex = 30;
+            // 
+            // cSlider_Blue
+            // 
+            this.cSlider_Blue.Location = new System.Drawing.Point(513, 321);
+            this.cSlider_Blue.Maximum = 255;
+            this.cSlider_Blue.Name = "cSlider_Blue";
+            this.cSlider_Blue.Size = new System.Drawing.Size(398, 45);
+            this.cSlider_Blue.TabIndex = 31;
+            // 
             // Basics
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(975, 614);
+            this.Controls.Add(this.cSlider_Blue);
+            this.Controls.Add(this.cSlider_Green);
+            this.Controls.Add(this.cSlider_Red);
             this.Controls.Add(this.picBox_Color);
             this.Controls.Add(this.btn_auto_refresh_rgbSlider);
-            this.Controls.Add(this.cSlider_Red);
-            this.Controls.Add(this.cSlider_Green);
-            this.Controls.Add(this.cSlider_Blue);
             this.Controls.Add(this.trackBar_brightness);
             this.Controls.Add(this.trackBar_saturation);
             this.Controls.Add(this.label1);
@@ -368,6 +290,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_Color)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cSlider_Red)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cSlider_Green)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cSlider_Blue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,11 +313,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TrackBar trackBar_saturation;
         private System.Windows.Forms.TrackBar trackBar_brightness;
-        private ColorSlider.ColorSlider cSlider_Blue;
-        private ColorSlider.ColorSlider cSlider_Green;
-        private ColorSlider.ColorSlider cSlider_Red;
         private System.Windows.Forms.Button btn_auto_refresh_rgbSlider;
         private System.Windows.Forms.PictureBox picBox_Color;
         private System.Windows.Forms.Timer timer_colorRefresh;
+        private System.Windows.Forms.TrackBar cSlider_Red;
+        private System.Windows.Forms.TrackBar cSlider_Green;
+        private System.Windows.Forms.TrackBar cSlider_Blue;
     }
 }
