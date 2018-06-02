@@ -496,6 +496,11 @@ namespace Arduino_Serial_Host_CS
             setColorWithTime(picBox_2_2.BackColor, 1000);
         }
 
+        private void timer_display_V3_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         private void getScreenColor()
         {
 
@@ -692,6 +697,8 @@ namespace Arduino_Serial_Host_CS
                 Console.WriteLine("SET BOTH " + color.R + " " + color.G + " " + color.B + " " + color.R + " " + color.G + " " + color.B + " " + Convert.ToString(time) + " \n");
             }
         }
+
+
 
 
 
