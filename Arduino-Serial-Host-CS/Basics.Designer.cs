@@ -195,7 +195,7 @@
             // 
             // trackBar_saturation
             // 
-            this.trackBar_saturation.Location = new System.Drawing.Point(573, 362);
+            this.trackBar_saturation.Location = new System.Drawing.Point(573, 462);
             this.trackBar_saturation.Maximum = 1000;
             this.trackBar_saturation.Name = "trackBar_saturation";
             this.trackBar_saturation.Size = new System.Drawing.Size(338, 45);
@@ -203,7 +203,7 @@
             // 
             // trackBar_brightness
             // 
-            this.trackBar_brightness.Location = new System.Drawing.Point(573, 413);
+            this.trackBar_brightness.Location = new System.Drawing.Point(573, 513);
             this.trackBar_brightness.Maximum = 1000;
             this.trackBar_brightness.Name = "trackBar_brightness";
             this.trackBar_brightness.Size = new System.Drawing.Size(338, 45);
@@ -243,6 +243,7 @@
             this.cSlider_Red.Name = "cSlider_Red";
             this.cSlider_Red.Size = new System.Drawing.Size(398, 45);
             this.cSlider_Red.TabIndex = 29;
+            this.cSlider_Red.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // cSlider_Green
             // 
@@ -251,6 +252,7 @@
             this.cSlider_Green.Name = "cSlider_Green";
             this.cSlider_Green.Size = new System.Drawing.Size(398, 45);
             this.cSlider_Green.TabIndex = 30;
+            this.cSlider_Green.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // cSlider_Blue
             // 
@@ -259,6 +261,7 @@
             this.cSlider_Blue.Name = "cSlider_Blue";
             this.cSlider_Blue.Size = new System.Drawing.Size(398, 45);
             this.cSlider_Blue.TabIndex = 31;
+            this.cSlider_Blue.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // Basics
             // 
