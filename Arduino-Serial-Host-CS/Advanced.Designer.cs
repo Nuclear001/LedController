@@ -278,7 +278,7 @@
             // 
             // trackBar_saturation
             // 
-            this.trackBar_saturation.Location = new System.Drawing.Point(625, 506);
+            this.trackBar_saturation.Location = new System.Drawing.Point(625, 387);
             this.trackBar_saturation.Maximum = 1000;
             this.trackBar_saturation.Name = "trackBar_saturation";
             this.trackBar_saturation.Size = new System.Drawing.Size(338, 45);
