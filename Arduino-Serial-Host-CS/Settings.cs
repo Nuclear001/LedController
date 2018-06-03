@@ -34,5 +34,10 @@ namespace Arduino_Serial_Host_CS
                 Console.WriteLine(port);
             }
         }
+
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+            //int items = listView1.SelectedItems.ToString;
+        }
     }
 }

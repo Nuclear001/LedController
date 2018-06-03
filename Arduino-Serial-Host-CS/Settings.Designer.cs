@@ -33,6 +33,7 @@
             this.btn_load = new System.Windows.Forms.Button();
             this.btn_refresh_Com = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader_portname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btn_save
@@ -79,8 +80,9 @@
             // 
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_portname});
             this.listView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(158)))), ((int)(((byte)(173)))));
-            this.listView1.FullRowSelect = true;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
             this.listView1.Location = new System.Drawing.Point(862, 12);
@@ -89,6 +91,11 @@
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
+            // 
+            // columnHeader_portname
+            // 
+            this.columnHeader_portname.Text = "port name";
             // 
             // Settings
             // 
@@ -115,5 +122,6 @@
         private System.Windows.Forms.Button btn_load;
         private System.Windows.Forms.Button btn_refresh_Com;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader_portname;
     }
 }
