@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_connect = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Advanced));
             this.btn_random = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_rgb_gradient = new System.Windows.Forms.Button();
@@ -39,9 +39,7 @@
             this.btn_PC = new System.Windows.Forms.Button();
             this.Arduino_Port = new System.IO.Ports.SerialPort(this.components);
             this.timer_display = new System.Windows.Forms.Timer(this.components);
-            this.picBox_1_2 = new System.Windows.Forms.PictureBox();
             this.btn_AverageDisplayColor = new System.Windows.Forms.Button();
-            this.picBox_1_1 = new System.Windows.Forms.PictureBox();
             this.lbl_hue = new System.Windows.Forms.Label();
             this.lbl_saturation = new System.Windows.Forms.Label();
             this.lbl_brightness = new System.Windows.Forms.Label();
@@ -53,33 +51,23 @@
             this.trackBar_brightness = new System.Windows.Forms.TrackBar();
             this.btn_AverageDisplayColor_V2 = new System.Windows.Forms.Button();
             this.timer_display_V2 = new System.Windows.Forms.Timer(this.components);
-            this.picBox_2_2 = new System.Windows.Forms.PictureBox();
-            this.picBox_2_1 = new System.Windows.Forms.PictureBox();
             this.lbl_delay = new System.Windows.Forms.Label();
-            this.btn_delay_up = new System.Windows.Forms.Button();
             this.timer_display_V3 = new System.Windows.Forms.Timer(this.components);
+            this.btn_delay_up = new System.Windows.Forms.Button();
+            this.picBox_2_1 = new System.Windows.Forms.PictureBox();
+            this.picBox_2_2 = new System.Windows.Forms.PictureBox();
+            this.picBox_1_1 = new System.Windows.Forms.PictureBox();
+            this.picBox_1_2 = new System.Windows.Forms.PictureBox();
+            this.btn_connect = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_connect
-            // 
-            this.btn_connect.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.Power_Off;
-            this.btn_connect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_connect.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
-            this.btn_connect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_connect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_connect.Location = new System.Drawing.Point(12, 12);
-            this.btn_connect.Name = "btn_connect";
-            this.btn_connect.Size = new System.Drawing.Size(54, 54);
-            this.btn_connect.TabIndex = 1;
-            this.btn_connect.UseVisualStyleBackColor = true;
-            this.btn_connect.Click += new System.EventHandler(this.btn_connect_click);
             // 
             // btn_random
             // 
@@ -123,7 +111,7 @@
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(98, 71);
+            this.numericUpDown1.Location = new System.Drawing.Point(408, 284);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -188,14 +176,6 @@
             this.timer_display.Interval = 1500;
             this.timer_display.Tick += new System.EventHandler(this.timer_display_Tick);
             // 
-            // picBox_1_2
-            // 
-            this.picBox_1_2.Location = new System.Drawing.Point(750, 12);
-            this.picBox_1_2.Name = "picBox_1_2";
-            this.picBox_1_2.Size = new System.Drawing.Size(171, 54);
-            this.picBox_1_2.TabIndex = 8;
-            this.picBox_1_2.TabStop = false;
-            // 
             // btn_AverageDisplayColor
             // 
             this.btn_AverageDisplayColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
@@ -210,14 +190,6 @@
             this.btn_AverageDisplayColor.Text = "Durchschnittliche Bildschirmfarbe V1";
             this.btn_AverageDisplayColor.UseVisualStyleBackColor = false;
             this.btn_AverageDisplayColor.Click += new System.EventHandler(this.btn_AverageDisplayColor_Click);
-            // 
-            // picBox_1_1
-            // 
-            this.picBox_1_1.Location = new System.Drawing.Point(573, 12);
-            this.picBox_1_1.Name = "picBox_1_1";
-            this.picBox_1_1.Size = new System.Drawing.Size(171, 54);
-            this.picBox_1_1.TabIndex = 10;
-            this.picBox_1_1.TabStop = false;
             // 
             // lbl_hue
             // 
@@ -330,13 +302,32 @@
             this.timer_display_V2.Interval = 10000;
             this.timer_display_V2.Tick += new System.EventHandler(this.timer_display_V2_Tick);
             // 
-            // picBox_2_2
+            // lbl_delay
             // 
-            this.picBox_2_2.Location = new System.Drawing.Point(750, 71);
-            this.picBox_2_2.Name = "picBox_2_2";
-            this.picBox_2_2.Size = new System.Drawing.Size(171, 54);
-            this.picBox_2_2.TabIndex = 27;
-            this.picBox_2_2.TabStop = false;
+            this.lbl_delay.AutoSize = true;
+            this.lbl_delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_delay.Location = new System.Drawing.Point(310, 50);
+            this.lbl_delay.Name = "lbl_delay";
+            this.lbl_delay.Size = new System.Drawing.Size(60, 25);
+            this.lbl_delay.TabIndex = 29;
+            this.lbl_delay.Text = "1000";
+            // 
+            // timer_display_V3
+            // 
+            this.timer_display_V3.Interval = 10000;
+            this.timer_display_V3.Tick += new System.EventHandler(this.timer_display_V3_Tick);
+            // 
+            // btn_delay_up
+            // 
+            this.btn_delay_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delay_up.BackgroundImage")));
+            this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delay_up.Location = new System.Drawing.Point(373, 40);
+            this.btn_delay_up.Name = "btn_delay_up";
+            this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
+            this.btn_delay_up.TabIndex = 30;
+            this.btn_delay_up.UseVisualStyleBackColor = true;
             // 
             // picBox_2_1
             // 
@@ -346,35 +337,60 @@
             this.picBox_2_1.TabIndex = 28;
             this.picBox_2_1.TabStop = false;
             // 
-            // lbl_delay
+            // picBox_2_2
             // 
-            this.lbl_delay.AutoSize = true;
-            this.lbl_delay.Location = new System.Drawing.Point(273, 71);
-            this.lbl_delay.Name = "lbl_delay";
-            this.lbl_delay.Size = new System.Drawing.Size(31, 13);
-            this.lbl_delay.TabIndex = 29;
-            this.lbl_delay.Text = "1000";
+            this.picBox_2_2.Location = new System.Drawing.Point(750, 71);
+            this.picBox_2_2.Name = "picBox_2_2";
+            this.picBox_2_2.Size = new System.Drawing.Size(171, 54);
+            this.picBox_2_2.TabIndex = 27;
+            this.picBox_2_2.TabStop = false;
             // 
-            // btn_delay_up
+            // picBox_1_1
             // 
-            this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delay_up.Location = new System.Drawing.Point(342, 63);
-            this.btn_delay_up.Name = "btn_delay_up";
-            this.btn_delay_up.Size = new System.Drawing.Size(59, 21);
-            this.btn_delay_up.TabIndex = 30;
-            this.btn_delay_up.Text = "button1";
-            this.btn_delay_up.UseVisualStyleBackColor = true;
+            this.picBox_1_1.Location = new System.Drawing.Point(573, 12);
+            this.picBox_1_1.Name = "picBox_1_1";
+            this.picBox_1_1.Size = new System.Drawing.Size(171, 54);
+            this.picBox_1_1.TabIndex = 10;
+            this.picBox_1_1.TabStop = false;
             // 
-            // timer_display_V3
+            // picBox_1_2
             // 
-            this.timer_display_V3.Interval = 10000;
-            this.timer_display_V3.Tick += new System.EventHandler(this.timer_display_V3_Tick);
+            this.picBox_1_2.Location = new System.Drawing.Point(750, 12);
+            this.picBox_1_2.Name = "picBox_1_2";
+            this.picBox_1_2.Size = new System.Drawing.Size(171, 54);
+            this.picBox_1_2.TabIndex = 8;
+            this.picBox_1_2.TabStop = false;
+            // 
+            // btn_connect
+            // 
+            this.btn_connect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_connect.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
+            this.btn_connect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_connect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_connect.Location = new System.Drawing.Point(12, 12);
+            this.btn_connect.Name = "btn_connect";
+            this.btn_connect.Size = new System.Drawing.Size(54, 54);
+            this.btn_connect.TabIndex = 1;
+            this.btn_connect.UseVisualStyleBackColor = true;
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(427, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 45);
+            this.button1.TabIndex = 31;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(975, 614);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_delay_up);
             this.Controls.Add(this.lbl_delay);
             this.Controls.Add(this.picBox_2_1);
@@ -403,12 +419,12 @@
             this.Name = "Advanced";
             this.Text = "Basics";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_1_2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,5 +461,6 @@
         private System.Windows.Forms.Label lbl_delay;
         private System.Windows.Forms.Button btn_delay_up;
         private System.Windows.Forms.Timer timer_display_V3;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -698,7 +698,23 @@ namespace Arduino_Serial_Host_CS
             }
         }
 
-
+        public void btn_delay_up_Click(object sender, EventArgs e)
+        {
+            fadeSpeed += 100;
+            lbl_delay.Text = Convert.ToString(fadeSpeed);
+        }
+        public void btn_delay_down_Click(object sender, EventArgs e)
+        {
+            if (fadeSpeed > 100)
+            {
+                fadeSpeed -= 100;
+                lbl_delay.Text = Convert.ToString(fadeSpeed);
+            }
+            else
+            {
+                MessageBox.Show("FAILED xD!!! Can't lower the delay under 100ms");
+            }
+        }
 
 
 

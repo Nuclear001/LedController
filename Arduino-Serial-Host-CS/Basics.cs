@@ -24,20 +24,19 @@ namespace Arduino_Serial_Host_CS
         {
             InitializeComponent();
         }
-        
+
 
         int fadeSpeed = 1000;
-        byte fadeNumber = 1;
         bool buttonmode = false;
         Random rnd = new Random();
 
 
 
-       
+
         bool PCEnabled = false;
         bool DESKEnabled = false;
 
-            public static Color FromAhsb(int alpha, float hue, float saturation, float brightness)
+        public static Color FromAhsb(int alpha, float hue, float saturation, float brightness)
         {
             if (0 > alpha
                 || 255 < alpha)
@@ -139,8 +138,8 @@ namespace Arduino_Serial_Host_CS
 
 
 
-       
-       
+
+
 
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)

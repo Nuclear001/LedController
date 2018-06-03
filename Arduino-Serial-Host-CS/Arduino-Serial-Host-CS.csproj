@@ -159,6 +159,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon ColorMixer.ico" />
+    <None Include="Resources\delay_up_button1.png" />
+    <None Include="Resources\delay_down_button.png" />
     <Content Include="Resources\Icon ColorMixer.png" />
     <None Include="Resources\Power-On.png" />
     <None Include="Resources\Power-Off.png" />
