@@ -357,6 +357,25 @@ namespace Arduino_Serial_Host_CS
             activeColorSpace = "HSB";
         }
 
+        private void btn_delay_up_Click(object sender, EventArgs e)
+        {
+            fadeSpeed += 100;
+            lbl_delay.Text = Convert.ToString(fadeSpeed) + " ms";
+        }
+
+        private void btn_delay_down_Click(object sender, EventArgs e)
+        {
+            if (fadeSpeed > 100)
+            {
+                fadeSpeed -= 100;
+                lbl_delay.Text = Convert.ToString(fadeSpeed) + " ms";
+            }
+            else
+            {
+                MessageBox.Show("You cannot lower the value under 100ms");
+            }          
+        }
+
 
 
 

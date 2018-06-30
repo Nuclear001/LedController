@@ -85,11 +85,11 @@
             this.btn_DESK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_DESK.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_DESK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DESK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_DESK.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DESK.ForeColor = System.Drawing.Color.Gray;
-            this.btn_DESK.Location = new System.Drawing.Point(276, 120);
+            this.btn_DESK.Location = new System.Drawing.Point(261, 120);
             this.btn_DESK.Name = "btn_DESK";
-            this.btn_DESK.Size = new System.Drawing.Size(145, 41);
+            this.btn_DESK.Size = new System.Drawing.Size(154, 34);
             this.btn_DESK.TabIndex = 6;
             this.btn_DESK.Text = "Desk";
             this.btn_DESK.UseVisualStyleBackColor = false;
@@ -100,11 +100,11 @@
             this.btn_PC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_PC.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_PC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_PC.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PC.ForeColor = System.Drawing.Color.Gray;
-            this.btn_PC.Location = new System.Drawing.Point(276, 168);
+            this.btn_PC.Location = new System.Drawing.Point(261, 166);
             this.btn_PC.Name = "btn_PC";
-            this.btn_PC.Size = new System.Drawing.Size(145, 41);
+            this.btn_PC.Size = new System.Drawing.Size(154, 34);
             this.btn_PC.TabIndex = 7;
             this.btn_PC.Text = "PC";
             this.btn_PC.UseVisualStyleBackColor = false;
@@ -117,60 +117,60 @@
             // lbl_hue
             // 
             this.lbl_hue.AutoSize = true;
-            this.lbl_hue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hue.Location = new System.Drawing.Point(590, 440);
+            this.lbl_hue.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hue.Location = new System.Drawing.Point(483, 462);
             this.lbl_hue.Name = "lbl_hue";
-            this.lbl_hue.Size = new System.Drawing.Size(20, 24);
+            this.lbl_hue.Size = new System.Drawing.Size(30, 23);
             this.lbl_hue.TabIndex = 13;
             this.lbl_hue.Text = "0";
             // 
             // lbl_saturation
             // 
             this.lbl_saturation.AutoSize = true;
-            this.lbl_saturation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saturation.Location = new System.Drawing.Point(590, 491);
+            this.lbl_saturation.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saturation.Location = new System.Drawing.Point(483, 513);
             this.lbl_saturation.Name = "lbl_saturation";
-            this.lbl_saturation.Size = new System.Drawing.Size(20, 24);
+            this.lbl_saturation.Size = new System.Drawing.Size(19, 23);
             this.lbl_saturation.TabIndex = 14;
             this.lbl_saturation.Text = "1";
             // 
             // lbl_brightness
             // 
             this.lbl_brightness.AutoSize = true;
-            this.lbl_brightness.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_brightness.Location = new System.Drawing.Point(590, 542);
+            this.lbl_brightness.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_brightness.Location = new System.Drawing.Point(483, 564);
             this.lbl_brightness.Name = "lbl_brightness";
-            this.lbl_brightness.Size = new System.Drawing.Size(35, 24);
+            this.lbl_brightness.Size = new System.Drawing.Size(53, 23);
             this.lbl_brightness.TabIndex = 15;
             this.lbl_brightness.Text = "0.5";
             // 
             // lbl_brightness_info
             // 
             this.lbl_brightness_info.AutoSize = true;
-            this.lbl_brightness_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_brightness_info.Location = new System.Drawing.Point(485, 542);
+            this.lbl_brightness_info.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_brightness_info.Location = new System.Drawing.Point(483, 542);
             this.lbl_brightness_info.Name = "lbl_brightness_info";
-            this.lbl_brightness_info.Size = new System.Drawing.Size(86, 24);
+            this.lbl_brightness_info.Size = new System.Drawing.Size(173, 23);
             this.lbl_brightness_info.TabIndex = 18;
             this.lbl_brightness_info.Text = "Helligkeit";
             // 
             // lbl_saturation_info
             // 
             this.lbl_saturation_info.AutoSize = true;
-            this.lbl_saturation_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saturation_info.Location = new System.Drawing.Point(485, 491);
+            this.lbl_saturation_info.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saturation_info.Location = new System.Drawing.Point(483, 491);
             this.lbl_saturation_info.Name = "lbl_saturation_info";
-            this.lbl_saturation_info.Size = new System.Drawing.Size(88, 24);
+            this.lbl_saturation_info.Size = new System.Drawing.Size(170, 23);
             this.lbl_saturation_info.TabIndex = 17;
             this.lbl_saturation_info.Text = "Sättigung";
             // 
             // lbl_hue_info
             // 
             this.lbl_hue_info.AutoSize = true;
-            this.lbl_hue_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hue_info.Location = new System.Drawing.Point(485, 440);
+            this.lbl_hue_info.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hue_info.Location = new System.Drawing.Point(483, 440);
             this.lbl_hue_info.Name = "lbl_hue_info";
-            this.lbl_hue_info.Size = new System.Drawing.Size(46, 24);
+            this.lbl_hue_info.Size = new System.Drawing.Size(70, 23);
             this.lbl_hue_info.TabIndex = 16;
             this.lbl_hue_info.Text = "Hue";
             // 
@@ -197,11 +197,11 @@
             this.btn_auto_refresh_rgbSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_auto_refresh_rgbSlider.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_auto_refresh_rgbSlider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_auto_refresh_rgbSlider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_auto_refresh_rgbSlider.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_auto_refresh_rgbSlider.ForeColor = System.Drawing.Color.Gray;
             this.btn_auto_refresh_rgbSlider.Location = new System.Drawing.Point(12, 120);
             this.btn_auto_refresh_rgbSlider.Name = "btn_auto_refresh_rgbSlider";
-            this.btn_auto_refresh_rgbSlider.Size = new System.Drawing.Size(212, 89);
+            this.btn_auto_refresh_rgbSlider.Size = new System.Drawing.Size(221, 80);
             this.btn_auto_refresh_rgbSlider.TabIndex = 26;
             this.btn_auto_refresh_rgbSlider.Text = "Automatisch Schieber aktualisieren";
             this.btn_auto_refresh_rgbSlider.UseVisualStyleBackColor = false;
@@ -256,11 +256,12 @@
             this.btn_delay_down.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_delay_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delay_down.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delay_down.Location = new System.Drawing.Point(373, 21);
+            this.btn_delay_down.Location = new System.Drawing.Point(330, 21);
             this.btn_delay_down.Name = "btn_delay_down";
             this.btn_delay_down.Size = new System.Drawing.Size(48, 45);
             this.btn_delay_down.TabIndex = 34;
             this.btn_delay_down.UseVisualStyleBackColor = true;
+            this.btn_delay_down.Click += new System.EventHandler(this.btn_delay_down_Click);
             // 
             // btn_delay_up
             // 
@@ -268,82 +269,83 @@
             this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delay_up.Location = new System.Drawing.Point(319, 21);
+            this.btn_delay_up.Location = new System.Drawing.Point(276, 21);
             this.btn_delay_up.Name = "btn_delay_up";
             this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
             this.btn_delay_up.TabIndex = 33;
             this.btn_delay_up.UseVisualStyleBackColor = true;
+            this.btn_delay_up.Click += new System.EventHandler(this.btn_delay_up_Click);
             // 
             // lbl_delay
             // 
             this.lbl_delay.AutoSize = true;
-            this.lbl_delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_delay.Location = new System.Drawing.Point(256, 31);
+            this.lbl_delay.Font = new System.Drawing.Font("Venus Rising Rg", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_delay.Location = new System.Drawing.Point(384, 26);
             this.lbl_delay.Name = "lbl_delay";
-            this.lbl_delay.Size = new System.Drawing.Size(60, 25);
+            this.lbl_delay.Size = new System.Drawing.Size(184, 33);
             this.lbl_delay.TabIndex = 32;
-            this.lbl_delay.Text = "1000";
+            this.lbl_delay.Text = "1000 ms";
             // 
             // lbl_blue_info
             // 
             this.lbl_blue_info.AutoSize = true;
-            this.lbl_blue_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_blue_info.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_blue_info.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_blue_info.Location = new System.Drawing.Point(533, 350);
+            this.lbl_blue_info.Location = new System.Drawing.Point(523, 350);
             this.lbl_blue_info.Name = "lbl_blue_info";
-            this.lbl_blue_info.Size = new System.Drawing.Size(47, 24);
+            this.lbl_blue_info.Size = new System.Drawing.Size(86, 23);
             this.lbl_blue_info.TabIndex = 40;
             this.lbl_blue_info.Text = "Blau";
             // 
             // lbl_green_info
             // 
             this.lbl_green_info.AutoSize = true;
-            this.lbl_green_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_green_info.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_green_info.ForeColor = System.Drawing.Color.SpringGreen;
-            this.lbl_green_info.Location = new System.Drawing.Point(533, 299);
+            this.lbl_green_info.Location = new System.Drawing.Point(523, 299);
             this.lbl_green_info.Name = "lbl_green_info";
-            this.lbl_green_info.Size = new System.Drawing.Size(52, 24);
+            this.lbl_green_info.Size = new System.Drawing.Size(89, 23);
             this.lbl_green_info.TabIndex = 39;
             this.lbl_green_info.Text = "Grün";
             // 
             // lbl_red_info
             // 
             this.lbl_red_info.AutoSize = true;
-            this.lbl_red_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_red_info.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_red_info.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbl_red_info.Location = new System.Drawing.Point(533, 248);
+            this.lbl_red_info.Location = new System.Drawing.Point(523, 248);
             this.lbl_red_info.Name = "lbl_red_info";
-            this.lbl_red_info.Size = new System.Drawing.Size(38, 24);
+            this.lbl_red_info.Size = new System.Drawing.Size(67, 23);
             this.lbl_red_info.TabIndex = 38;
             this.lbl_red_info.Text = "Rot";
             // 
             // lbl_blue
             // 
             this.lbl_blue.AutoSize = true;
-            this.lbl_blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_blue.Location = new System.Drawing.Point(625, 350);
+            this.lbl_blue.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_blue.Location = new System.Drawing.Point(523, 372);
             this.lbl_blue.Name = "lbl_blue";
-            this.lbl_blue.Size = new System.Drawing.Size(20, 24);
+            this.lbl_blue.Size = new System.Drawing.Size(30, 23);
             this.lbl_blue.TabIndex = 37;
             this.lbl_blue.Text = "0";
             // 
             // lbl_green
             // 
             this.lbl_green.AutoSize = true;
-            this.lbl_green.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_green.Location = new System.Drawing.Point(625, 299);
+            this.lbl_green.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_green.Location = new System.Drawing.Point(523, 321);
             this.lbl_green.Name = "lbl_green";
-            this.lbl_green.Size = new System.Drawing.Size(20, 24);
+            this.lbl_green.Size = new System.Drawing.Size(30, 23);
             this.lbl_green.TabIndex = 36;
             this.lbl_green.Text = "0";
             // 
             // lbl_red
             // 
             this.lbl_red.AutoSize = true;
-            this.lbl_red.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_red.Location = new System.Drawing.Point(625, 248);
+            this.lbl_red.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_red.Location = new System.Drawing.Point(523, 270);
             this.lbl_red.Name = "lbl_red";
-            this.lbl_red.Size = new System.Drawing.Size(20, 24);
+            this.lbl_red.Size = new System.Drawing.Size(30, 23);
             this.lbl_red.TabIndex = 35;
             this.lbl_red.Text = "0";
             // 

@@ -44,22 +44,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.trackBar_saturation = new System.Windows.Forms.TrackBar();
-            this.button_enables_overide = new System.Windows.Forms.Button();
-            this.trackBar_brightness = new System.Windows.Forms.TrackBar();
             this.btn_AverageDisplayColor_V2 = new System.Windows.Forms.Button();
             this.timer_display_V2 = new System.Windows.Forms.Timer(this.components);
-            this.lbl_delay = new System.Windows.Forms.Label();
             this.timer_display_V3 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_delay_up = new System.Windows.Forms.Button();
             this.picBox_2_1 = new System.Windows.Forms.PictureBox();
             this.picBox_2_2 = new System.Windows.Forms.PictureBox();
             this.picBox_1_1 = new System.Windows.Forms.PictureBox();
             this.picBox_1_2 = new System.Windows.Forms.PictureBox();
             this.btn_connect = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).BeginInit();
+            this.btn_delay_down = new System.Windows.Forms.Button();
+            this.btn_delay_up = new System.Windows.Forms.Button();
+            this.lbl_delay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).BeginInit();
@@ -71,11 +66,11 @@
             this.btn_random.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_random.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_random.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_random.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_random.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
             this.btn_random.ForeColor = System.Drawing.Color.Gray;
             this.btn_random.Location = new System.Drawing.Point(12, 120);
             this.btn_random.Name = "btn_random";
-            this.btn_random.Size = new System.Drawing.Size(212, 89);
+            this.btn_random.Size = new System.Drawing.Size(221, 80);
             this.btn_random.TabIndex = 2;
             this.btn_random.Text = "Zufällig";
             this.btn_random.UseVisualStyleBackColor = false;
@@ -91,11 +86,11 @@
             this.btn_rgb_gradient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_rgb_gradient.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_rgb_gradient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rgb_gradient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rgb_gradient.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
             this.btn_rgb_gradient.ForeColor = System.Drawing.Color.Gray;
             this.btn_rgb_gradient.Location = new System.Drawing.Point(12, 215);
             this.btn_rgb_gradient.Name = "btn_rgb_gradient";
-            this.btn_rgb_gradient.Size = new System.Drawing.Size(212, 89);
+            this.btn_rgb_gradient.Size = new System.Drawing.Size(221, 80);
             this.btn_rgb_gradient.TabIndex = 3;
             this.btn_rgb_gradient.Text = "Farbverlauf";
             this.btn_rgb_gradient.UseVisualStyleBackColor = false;
@@ -111,11 +106,11 @@
             this.btn_DESK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_DESK.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_DESK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DESK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_DESK.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
             this.btn_DESK.ForeColor = System.Drawing.Color.Gray;
-            this.btn_DESK.Location = new System.Drawing.Point(276, 120);
+            this.btn_DESK.Location = new System.Drawing.Point(261, 120);
             this.btn_DESK.Name = "btn_DESK";
-            this.btn_DESK.Size = new System.Drawing.Size(145, 43);
+            this.btn_DESK.Size = new System.Drawing.Size(154, 34);
             this.btn_DESK.TabIndex = 6;
             this.btn_DESK.Text = "Desk";
             this.btn_DESK.UseVisualStyleBackColor = false;
@@ -126,11 +121,11 @@
             this.btn_PC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_PC.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_PC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_PC.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
             this.btn_PC.ForeColor = System.Drawing.Color.Gray;
-            this.btn_PC.Location = new System.Drawing.Point(276, 166);
+            this.btn_PC.Location = new System.Drawing.Point(261, 166);
             this.btn_PC.Name = "btn_PC";
-            this.btn_PC.Size = new System.Drawing.Size(145, 43);
+            this.btn_PC.Size = new System.Drawing.Size(154, 34);
             this.btn_PC.TabIndex = 7;
             this.btn_PC.Text = "PC";
             this.btn_PC.UseVisualStyleBackColor = false;
@@ -150,11 +145,11 @@
             this.btn_AverageDisplayColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_AverageDisplayColor.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_AverageDisplayColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AverageDisplayColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AverageDisplayColor.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
             this.btn_AverageDisplayColor.ForeColor = System.Drawing.Color.Gray;
             this.btn_AverageDisplayColor.Location = new System.Drawing.Point(12, 310);
             this.btn_AverageDisplayColor.Name = "btn_AverageDisplayColor";
-            this.btn_AverageDisplayColor.Size = new System.Drawing.Size(212, 89);
+            this.btn_AverageDisplayColor.Size = new System.Drawing.Size(221, 80);
             this.btn_AverageDisplayColor.TabIndex = 9;
             this.btn_AverageDisplayColor.Text = "Durchschnittliche Bildschirmfarbe V1";
             this.btn_AverageDisplayColor.UseVisualStyleBackColor = false;
@@ -163,104 +158,73 @@
             // lbl_hue
             // 
             this.lbl_hue.AutoSize = true;
-            this.lbl_hue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hue.Location = new System.Drawing.Point(862, 128);
+            this.lbl_hue.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
+            this.lbl_hue.Location = new System.Drawing.Point(904, 137);
             this.lbl_hue.Name = "lbl_hue";
-            this.lbl_hue.Size = new System.Drawing.Size(20, 24);
+            this.lbl_hue.Size = new System.Drawing.Size(30, 23);
             this.lbl_hue.TabIndex = 13;
             this.lbl_hue.Text = "0";
             // 
             // lbl_saturation
             // 
             this.lbl_saturation.AutoSize = true;
-            this.lbl_saturation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saturation.Location = new System.Drawing.Point(862, 152);
+            this.lbl_saturation.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
+            this.lbl_saturation.Location = new System.Drawing.Point(904, 161);
             this.lbl_saturation.Name = "lbl_saturation";
-            this.lbl_saturation.Size = new System.Drawing.Size(20, 24);
+            this.lbl_saturation.Size = new System.Drawing.Size(19, 23);
             this.lbl_saturation.TabIndex = 14;
             this.lbl_saturation.Text = "1";
             // 
             // lbl_brightness
             // 
             this.lbl_brightness.AutoSize = true;
-            this.lbl_brightness.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_brightness.Location = new System.Drawing.Point(862, 176);
+            this.lbl_brightness.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
+            this.lbl_brightness.Location = new System.Drawing.Point(904, 185);
             this.lbl_brightness.Name = "lbl_brightness";
-            this.lbl_brightness.Size = new System.Drawing.Size(35, 24);
+            this.lbl_brightness.Size = new System.Drawing.Size(53, 23);
             this.lbl_brightness.TabIndex = 15;
             this.lbl_brightness.Text = "0.5";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(746, 176);
+            this.label1.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
+            this.label1.Location = new System.Drawing.Point(611, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 24);
+            this.label1.Size = new System.Drawing.Size(189, 23);
             this.label1.TabIndex = 18;
             this.label1.Text = "Brightness";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(746, 152);
+            this.label2.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
+            this.label2.Location = new System.Drawing.Point(611, 161);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 24);
+            this.label2.Size = new System.Drawing.Size(190, 23);
             this.label2.TabIndex = 17;
             this.label2.Text = "Saturation";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(746, 128);
+            this.label3.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
+            this.label3.Location = new System.Drawing.Point(611, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 24);
+            this.label3.Size = new System.Drawing.Size(70, 23);
             this.label3.TabIndex = 16;
             this.label3.Text = "Hue";
-            // 
-            // trackBar_saturation
-            // 
-            this.trackBar_saturation.Location = new System.Drawing.Point(625, 506);
-            this.trackBar_saturation.Maximum = 1000;
-            this.trackBar_saturation.Name = "trackBar_saturation";
-            this.trackBar_saturation.Size = new System.Drawing.Size(338, 45);
-            this.trackBar_saturation.TabIndex = 19;
-            // 
-            // button_enables_overide
-            // 
-            this.button_enables_overide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
-            this.button_enables_overide.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_enables_overide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_enables_overide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button_enables_overide.ForeColor = System.Drawing.Color.Gray;
-            this.button_enables_overide.Location = new System.Drawing.Point(474, 557);
-            this.button_enables_overide.Name = "button_enables_overide";
-            this.button_enables_overide.Size = new System.Drawing.Size(145, 43);
-            this.button_enables_overide.TabIndex = 20;
-            this.button_enables_overide.Text = "Overide";
-            this.button_enables_overide.UseVisualStyleBackColor = false;
-            this.button_enables_overide.Click += new System.EventHandler(this.button_enables_overide_Click);
-            // 
-            // trackBar_brightness
-            // 
-            this.trackBar_brightness.Location = new System.Drawing.Point(625, 557);
-            this.trackBar_brightness.Maximum = 1000;
-            this.trackBar_brightness.Name = "trackBar_brightness";
-            this.trackBar_brightness.Size = new System.Drawing.Size(338, 45);
-            this.trackBar_brightness.TabIndex = 21;
             // 
             // btn_AverageDisplayColor_V2
             // 
             this.btn_AverageDisplayColor_V2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
             this.btn_AverageDisplayColor_V2.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_AverageDisplayColor_V2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AverageDisplayColor_V2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AverageDisplayColor_V2.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
             this.btn_AverageDisplayColor_V2.ForeColor = System.Drawing.Color.Gray;
             this.btn_AverageDisplayColor_V2.Location = new System.Drawing.Point(12, 405);
             this.btn_AverageDisplayColor_V2.Name = "btn_AverageDisplayColor_V2";
-            this.btn_AverageDisplayColor_V2.Size = new System.Drawing.Size(212, 89);
+            this.btn_AverageDisplayColor_V2.Size = new System.Drawing.Size(221, 80);
             this.btn_AverageDisplayColor_V2.TabIndex = 25;
             this.btn_AverageDisplayColor_V2.Text = "Durchschnittliche Bildschirmfarbe V2";
             this.btn_AverageDisplayColor_V2.UseVisualStyleBackColor = false;
@@ -271,51 +235,14 @@
             this.timer_display_V2.Interval = 10000;
             this.timer_display_V2.Tick += new System.EventHandler(this.timer_display_V2_Tick);
             // 
-            // lbl_delay
-            // 
-            this.lbl_delay.AutoSize = true;
-            this.lbl_delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_delay.Location = new System.Drawing.Point(256, 31);
-            this.lbl_delay.Name = "lbl_delay";
-            this.lbl_delay.Size = new System.Drawing.Size(60, 25);
-            this.lbl_delay.TabIndex = 29;
-            this.lbl_delay.Text = "1000";
-            // 
             // timer_display_V3
             // 
             this.timer_display_V3.Interval = 10000;
             this.timer_display_V3.Tick += new System.EventHandler(this.timer_display_V3_Tick);
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.delay_down_button;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(373, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 45);
-            this.button1.TabIndex = 31;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btn_delay_down_Click);
-            // 
-            // btn_delay_up
-            // 
-            this.btn_delay_up.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.delay_up_button;
-            this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delay_up.Location = new System.Drawing.Point(319, 21);
-            this.btn_delay_up.Name = "btn_delay_up";
-            this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
-            this.btn_delay_up.TabIndex = 30;
-            this.btn_delay_up.UseVisualStyleBackColor = true;
-            this.btn_delay_up.Click += new System.EventHandler(this.btn_delay_up_Click);
-            // 
             // picBox_2_1
             // 
-            this.picBox_2_1.Location = new System.Drawing.Point(573, 72);
+            this.picBox_2_1.Location = new System.Drawing.Point(615, 81);
             this.picBox_2_1.Name = "picBox_2_1";
             this.picBox_2_1.Size = new System.Drawing.Size(171, 54);
             this.picBox_2_1.TabIndex = 28;
@@ -323,7 +250,7 @@
             // 
             // picBox_2_2
             // 
-            this.picBox_2_2.Location = new System.Drawing.Point(750, 71);
+            this.picBox_2_2.Location = new System.Drawing.Point(792, 80);
             this.picBox_2_2.Name = "picBox_2_2";
             this.picBox_2_2.Size = new System.Drawing.Size(171, 54);
             this.picBox_2_2.TabIndex = 27;
@@ -331,7 +258,7 @@
             // 
             // picBox_1_1
             // 
-            this.picBox_1_1.Location = new System.Drawing.Point(573, 12);
+            this.picBox_1_1.Location = new System.Drawing.Point(615, 21);
             this.picBox_1_1.Name = "picBox_1_1";
             this.picBox_1_1.Size = new System.Drawing.Size(171, 54);
             this.picBox_1_1.TabIndex = 10;
@@ -339,7 +266,7 @@
             // 
             // picBox_1_2
             // 
-            this.picBox_1_2.Location = new System.Drawing.Point(750, 12);
+            this.picBox_1_2.Location = new System.Drawing.Point(792, 21);
             this.picBox_1_2.Name = "picBox_1_2";
             this.picBox_1_2.Size = new System.Drawing.Size(171, 54);
             this.picBox_1_2.TabIndex = 8;
@@ -359,20 +286,52 @@
             this.btn_connect.UseVisualStyleBackColor = true;
             this.btn_connect.Click += new System.EventHandler(this.btn_connect_click);
             // 
+            // btn_delay_down
+            // 
+            this.btn_delay_down.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.delay_down_button;
+            this.btn_delay_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_delay_down.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_delay_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delay_down.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delay_down.Location = new System.Drawing.Point(315, 21);
+            this.btn_delay_down.Name = "btn_delay_down";
+            this.btn_delay_down.Size = new System.Drawing.Size(48, 45);
+            this.btn_delay_down.TabIndex = 37;
+            this.btn_delay_down.UseVisualStyleBackColor = true;
+            // 
+            // btn_delay_up
+            // 
+            this.btn_delay_up.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.delay_up_button;
+            this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delay_up.Location = new System.Drawing.Point(261, 21);
+            this.btn_delay_up.Name = "btn_delay_up";
+            this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
+            this.btn_delay_up.TabIndex = 36;
+            this.btn_delay_up.UseVisualStyleBackColor = true;
+            // 
+            // lbl_delay
+            // 
+            this.lbl_delay.AutoSize = true;
+            this.lbl_delay.Font = new System.Drawing.Font("Venus Rising Rg", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_delay.Location = new System.Drawing.Point(369, 26);
+            this.lbl_delay.Name = "lbl_delay";
+            this.lbl_delay.Size = new System.Drawing.Size(184, 33);
+            this.lbl_delay.TabIndex = 35;
+            this.lbl_delay.Text = "1000 ms";
+            // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(975, 614);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_delay_down);
             this.Controls.Add(this.btn_delay_up);
             this.Controls.Add(this.lbl_delay);
             this.Controls.Add(this.picBox_2_1);
             this.Controls.Add(this.picBox_2_2);
             this.Controls.Add(this.btn_AverageDisplayColor_V2);
-            this.Controls.Add(this.trackBar_brightness);
-            this.Controls.Add(this.button_enables_overide);
-            this.Controls.Add(this.trackBar_saturation);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -391,8 +350,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Advanced";
             this.Text = "Basics";
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).EndInit();
@@ -422,16 +379,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TrackBar trackBar_saturation;
-        private System.Windows.Forms.Button button_enables_overide;
-        private System.Windows.Forms.TrackBar trackBar_brightness;
         private System.Windows.Forms.Button btn_AverageDisplayColor_V2;
         private System.Windows.Forms.Timer timer_display_V2;
         private System.Windows.Forms.PictureBox picBox_2_2;
         private System.Windows.Forms.PictureBox picBox_2_1;
-        private System.Windows.Forms.Label lbl_delay;
-        private System.Windows.Forms.Button btn_delay_up;
         private System.Windows.Forms.Timer timer_display_V3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_delay_down;
+        private System.Windows.Forms.Button btn_delay_up;
+        private System.Windows.Forms.Label lbl_delay;
     }
 }
