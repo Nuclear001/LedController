@@ -159,7 +159,7 @@
             // 
             this.lbl_hue.AutoSize = true;
             this.lbl_hue.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
-            this.lbl_hue.Location = new System.Drawing.Point(904, 137);
+            this.lbl_hue.Location = new System.Drawing.Point(807, 137);
             this.lbl_hue.Name = "lbl_hue";
             this.lbl_hue.Size = new System.Drawing.Size(30, 23);
             this.lbl_hue.TabIndex = 13;
@@ -169,7 +169,7 @@
             // 
             this.lbl_saturation.AutoSize = true;
             this.lbl_saturation.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
-            this.lbl_saturation.Location = new System.Drawing.Point(904, 161);
+            this.lbl_saturation.Location = new System.Drawing.Point(807, 162);
             this.lbl_saturation.Name = "lbl_saturation";
             this.lbl_saturation.Size = new System.Drawing.Size(19, 23);
             this.lbl_saturation.TabIndex = 14;
@@ -179,7 +179,7 @@
             // 
             this.lbl_brightness.AutoSize = true;
             this.lbl_brightness.Font = new System.Drawing.Font("Venus Rising Rg", 14.25F);
-            this.lbl_brightness.Location = new System.Drawing.Point(904, 185);
+            this.lbl_brightness.Location = new System.Drawing.Point(807, 185);
             this.lbl_brightness.Name = "lbl_brightness";
             this.lbl_brightness.Size = new System.Drawing.Size(53, 23);
             this.lbl_brightness.TabIndex = 15;

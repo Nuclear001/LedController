@@ -382,13 +382,6 @@ namespace Arduino_Serial_Host_CS
                 }
                 AverageColorVal = FromAhsb(AverageColorVal.A, AverageColorVal.GetHue(), 0.95F, AverageColorVal.GetBrightness());
 
-                if (HSVoveride == true)
-                {
-                    double saturation = (Convert.ToDouble(trackBar_saturation.Value) / 1000);
-                    double brightness = (Convert.ToDouble(trackBar_brightness.Value) / 1000);
-                    AverageColorVal = FromAhsb(AverageColorVal.A, AverageColorVal.GetHue(), Convert.ToSingle(saturation), Convert.ToSingle(brightness));
-                }
-
                 //set picturepox after postprocessing
                 picBox_1_2.BackColor = AverageColorVal;
 
@@ -639,23 +632,6 @@ namespace Arduino_Serial_Host_CS
 
 
             return screenPixel.GetPixel(0, 0);
-        }
-
-        private void button_enables_overide_Click(object sender, EventArgs e)
-        {
-            if (Arduino_Port.IsOpen)
-            {
-                if (HSVoveride == true)
-                {
-                    disablingButton(button_enables_overide);
-                    HSVoveride = false;
-                }
-                else
-                {
-                    enablingButton(button_enables_overide);
-                    HSVoveride = true;
-                }
-            }
         }
 
 
