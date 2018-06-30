@@ -275,7 +275,7 @@
             // 
             this.lbl_delay.AutoSize = true;
             this.lbl_delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_delay.Location = new System.Drawing.Point(310, 50);
+            this.lbl_delay.Location = new System.Drawing.Point(256, 31);
             this.lbl_delay.Name = "lbl_delay";
             this.lbl_delay.Size = new System.Drawing.Size(60, 25);
             this.lbl_delay.TabIndex = 29;
@@ -293,7 +293,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(427, 40);
+            this.button1.Location = new System.Drawing.Point(373, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 45);
             this.button1.TabIndex = 31;
@@ -306,7 +306,7 @@
             this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delay_up.Location = new System.Drawing.Point(373, 40);
+            this.btn_delay_up.Location = new System.Drawing.Point(319, 21);
             this.btn_delay_up.Name = "btn_delay_up";
             this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
             this.btn_delay_up.TabIndex = 30;

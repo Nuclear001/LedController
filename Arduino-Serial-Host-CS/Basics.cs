@@ -28,13 +28,18 @@ namespace Arduino_Serial_Host_CS
 
         int fadeSpeed = 1000;
         bool buttonmode = false;
-        Random rnd = new Random();
 
 
 
 
         bool PCEnabled = false;
         bool DESKEnabled = false;
+
+        //active color space
+        string activeColorSpace = "RGB";
+
+        //the selected color
+        Color color;
 
         public static Color FromAhsb(int alpha, float hue, float saturation, float brightness)
         {
@@ -135,17 +140,6 @@ namespace Arduino_Serial_Host_CS
             }
         }
 
-
-
-
-
-
-
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            fadeSpeed = Convert.ToInt32(numericUpDown1.Value);
-        }
 
         private void btn_DESK_Click(object sender, EventArgs e)
         {
@@ -274,13 +268,94 @@ namespace Arduino_Serial_Host_CS
 
         private void timer_colorRefresh_Tick(object sender, EventArgs e)
         {
-            timer_colorRefresh.Interval = fadeSpeed;
+            if (Arduino_Port.IsOpen)
+            {
+                timer_colorRefresh.Interval = fadeSpeed + 10;
 
-            Color newColor = Color.FromArgb(cSlider_Red.Value, cSlider_Green.Value, cSlider_Blue.Value);
+                setColorWithTime(color, fadeSpeed);
+            }
+        }
+        private void colorCalc()
+        {
+            //decide which Color is choosen (RGB or HSB)
+            if (activeColorSpace == "RGB")
+            {
+                //get the color
+                color = Color.FromArgb(slider_red.Value, slider_green.Value, slider_blue.Value);
+                //set other sliders
+                slider_hue.Value = Convert.ToInt32(color.GetHue());
+                slider_saturation.Value = Convert.ToInt32(color.GetSaturation() * 1000);
+                slider_brightness.Value = Convert.ToInt32(color.GetBrightness() * 1000);
 
-            setColorWithTime(newColor, fadeSpeed);
+                //set all labels
+                lbl_red.Text = Convert.ToString(color.R);
+                lbl_green.Text = Convert.ToString(color.G);
+                lbl_blue.Text = Convert.ToString(color.B);
+
+                lbl_hue.Text = Convert.ToString(color.GetHue());
+                lbl_saturation.Text = Convert.ToString(color.GetSaturation());
+                lbl_brightness.Text = Convert.ToString(color.GetBrightness());
+            }
+            else if (activeColorSpace == "HSB")
+            {
+                //precalc
+                float Saturation = slider_saturation.Value / 1000;
+                float Brightness = slider_brightness.Value / 1000;
+                float Hue = slider_hue.Value;
+                //get the color
+                color = FromAhsb(255, Hue, color.GetSaturation(), color.GetBrightness());       //Very crappy thing but the "normal way it won't work ;("
+                //set other sliders
+                slider_red.Value = color.R;
+                slider_green.Value = color.G;
+                slider_blue.Value = color.B;
+
+                //set all labels
+                lbl_red.Text = Convert.ToString(color.R);
+                lbl_green.Text = Convert.ToString(color.G);
+                lbl_blue.Text = Convert.ToString(color.B);
+
+                lbl_hue.Text = Convert.ToString(color.GetHue());
+                lbl_saturation.Text = Convert.ToString(color.GetSaturation());
+                lbl_brightness.Text = Convert.ToString(color.GetBrightness());
+            }
+            picBox_Color.BackColor = color;
         }
 
+        private void cSlider_Red_Scroll(object sender, EventArgs e)
+        {
+            colorCalc();
+            activeColorSpace = "RGB";
+        }
+
+        private void slider_green_Scroll(object sender, EventArgs e)
+        {
+            colorCalc();
+            activeColorSpace = "RGB";
+        }
+
+        private void slider_blue_Scroll(object sender, EventArgs e)
+        {
+            colorCalc();
+            activeColorSpace = "RGB";
+        }
+
+        private void slider_hue_Scroll(object sender, EventArgs e)
+        {
+            colorCalc();
+            activeColorSpace = "HSB";
+        }
+
+        private void slider_saturation_Scroll(object sender, EventArgs e)
+        {
+            colorCalc();
+            activeColorSpace = "HSB";
+        }
+
+        private void slider_brightness_Scroll(object sender, EventArgs e)
+        {
+            colorCalc();
+            activeColorSpace = "HSB";
+        }
 
 
 
