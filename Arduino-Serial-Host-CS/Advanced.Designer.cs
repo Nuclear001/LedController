@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Advanced));
             this.btn_random = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_rgb_gradient = new System.Windows.Forms.Button();
@@ -53,13 +52,13 @@
             this.timer_display_V2 = new System.Windows.Forms.Timer(this.components);
             this.lbl_delay = new System.Windows.Forms.Label();
             this.timer_display_V3 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_delay_up = new System.Windows.Forms.Button();
             this.picBox_2_1 = new System.Windows.Forms.PictureBox();
             this.picBox_2_2 = new System.Windows.Forms.PictureBox();
             this.picBox_1_1 = new System.Windows.Forms.PictureBox();
             this.picBox_1_2 = new System.Windows.Forms.PictureBox();
             this.btn_connect = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).BeginInit();
@@ -111,7 +110,7 @@
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(408, 284);
+            this.numericUpDown1.Location = new System.Drawing.Point(300, 294);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -317,9 +316,23 @@
             this.timer_display_V3.Interval = 10000;
             this.timer_display_V3.Tick += new System.EventHandler(this.timer_display_V3_Tick);
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.delay_down_button;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(427, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 45);
+            this.button1.TabIndex = 31;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_delay_down_Click);
+            // 
             // btn_delay_up
             // 
-            this.btn_delay_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delay_up.BackgroundImage")));
+            this.btn_delay_up.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.delay_up_button;
             this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -328,6 +341,7 @@
             this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
             this.btn_delay_up.TabIndex = 30;
             this.btn_delay_up.UseVisualStyleBackColor = true;
+            this.btn_delay_up.Click += new System.EventHandler(this.btn_delay_up_Click);
             // 
             // picBox_2_1
             // 
@@ -363,6 +377,7 @@
             // 
             // btn_connect
             // 
+            this.btn_connect.BackgroundImage = global::Arduino_Serial_Host_CS.Properties.Resources.Power_Off;
             this.btn_connect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_connect.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
             this.btn_connect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -373,17 +388,6 @@
             this.btn_connect.TabIndex = 1;
             this.btn_connect.UseVisualStyleBackColor = true;
             this.btn_connect.Click += new System.EventHandler(this.btn_connect_click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(427, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 45);
-            this.button1.TabIndex = 31;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Advanced
             // 

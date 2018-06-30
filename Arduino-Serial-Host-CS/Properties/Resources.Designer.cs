@@ -93,16 +93,6 @@ namespace Arduino_Serial_Host_CS.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap delay_up_button1 {
-            get {
-                object obj = ResourceManager.GetObject("delay_up_button1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Icon_ColorMixer {
             get {
                 object obj = ResourceManager.GetObject("Icon_ColorMixer", resourceCulture);

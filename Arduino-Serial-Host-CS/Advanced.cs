@@ -712,7 +712,7 @@ namespace Arduino_Serial_Host_CS
             }
             else
             {
-                MessageBox.Show("FAILED xD!!! Can't lower the delay under 100ms");
+                MessageBox.Show("You cannot lower the delay under 100ms");
             }
         }
 
