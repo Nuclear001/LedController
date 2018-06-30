@@ -256,7 +256,7 @@
             this.btn_delay_down.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_delay_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delay_down.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delay_down.Location = new System.Drawing.Point(330, 21);
+            this.btn_delay_down.Location = new System.Drawing.Point(315, 21);
             this.btn_delay_down.Name = "btn_delay_down";
             this.btn_delay_down.Size = new System.Drawing.Size(48, 45);
             this.btn_delay_down.TabIndex = 34;
@@ -269,7 +269,7 @@
             this.btn_delay_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_delay_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delay_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delay_up.Location = new System.Drawing.Point(276, 21);
+            this.btn_delay_up.Location = new System.Drawing.Point(261, 21);
             this.btn_delay_up.Name = "btn_delay_up";
             this.btn_delay_up.Size = new System.Drawing.Size(48, 45);
             this.btn_delay_up.TabIndex = 33;
@@ -280,7 +280,7 @@
             // 
             this.lbl_delay.AutoSize = true;
             this.lbl_delay.Font = new System.Drawing.Font("Venus Rising Rg", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_delay.Location = new System.Drawing.Point(384, 26);
+            this.lbl_delay.Location = new System.Drawing.Point(369, 26);
             this.lbl_delay.Name = "lbl_delay";
             this.lbl_delay.Size = new System.Drawing.Size(184, 33);
             this.lbl_delay.TabIndex = 32;
