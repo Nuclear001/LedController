@@ -32,7 +32,6 @@
             this.btn_random = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_rgb_gradient = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.timer_RGB_Gradient = new System.Windows.Forms.Timer(this.components);
             this.btn_DESK = new System.Windows.Forms.Button();
             this.btn_PC = new System.Windows.Forms.Button();
@@ -59,7 +58,6 @@
             this.picBox_1_1 = new System.Windows.Forms.PictureBox();
             this.picBox_1_2 = new System.Windows.Forms.PictureBox();
             this.btn_connect = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).BeginInit();
@@ -102,34 +100,6 @@
             this.btn_rgb_gradient.Text = "Farbverlauf";
             this.btn_rgb_gradient.UseVisualStyleBackColor = false;
             this.btn_rgb_gradient.Click += new System.EventHandler(this.btn_rgb_gradient_Click);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Increment = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Location = new System.Drawing.Point(300, 294);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(145, 20);
-            this.numericUpDown1.TabIndex = 4;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // timer_RGB_Gradient
             // 
@@ -414,7 +384,6 @@
             this.Controls.Add(this.picBox_1_2);
             this.Controls.Add(this.btn_PC);
             this.Controls.Add(this.btn_DESK);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btn_rgb_gradient);
             this.Controls.Add(this.btn_random);
             this.Controls.Add(this.btn_connect);
@@ -422,7 +391,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Advanced";
             this.Text = "Basics";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_saturation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_brightness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).EndInit();
@@ -440,7 +408,6 @@
         private System.Windows.Forms.Button btn_random;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btn_rgb_gradient;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Timer timer_RGB_Gradient;
         private System.Windows.Forms.Button btn_DESK;
         private System.Windows.Forms.Button btn_PC;

@@ -227,11 +227,6 @@ namespace Arduino_Serial_Host_CS
 
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            fadeSpeed = Convert.ToInt32(numericUpDown1.Value);
-        }
-
         private void timer_RGB_Gradient_Tick(object sender, EventArgs e)
         {
             timer_RGB_Gradient.Interval = fadeSpeed;
