@@ -177,7 +177,7 @@
             // slider_saturation
             // 
             this.slider_saturation.Location = new System.Drawing.Point(651, 491);
-            this.slider_saturation.Maximum = 1000;
+            this.slider_saturation.Maximum = 100;
             this.slider_saturation.Name = "slider_saturation";
             this.slider_saturation.Size = new System.Drawing.Size(312, 45);
             this.slider_saturation.TabIndex = 19;
@@ -186,7 +186,7 @@
             // slider_brightness
             // 
             this.slider_brightness.Location = new System.Drawing.Point(651, 542);
-            this.slider_brightness.Maximum = 1000;
+            this.slider_brightness.Maximum = 100;
             this.slider_brightness.Name = "slider_brightness";
             this.slider_brightness.Size = new System.Drawing.Size(312, 45);
             this.slider_brightness.TabIndex = 21;

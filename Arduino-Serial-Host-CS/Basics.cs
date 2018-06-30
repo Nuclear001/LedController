@@ -284,8 +284,8 @@ namespace Arduino_Serial_Host_CS
                 color = Color.FromArgb(slider_red.Value, slider_green.Value, slider_blue.Value);
                 //set other sliders
                 slider_hue.Value = Convert.ToInt32(color.GetHue());
-                slider_saturation.Value = Convert.ToInt32(color.GetSaturation() * 1000);
-                slider_brightness.Value = Convert.ToInt32(color.GetBrightness() * 1000);
+                slider_saturation.Value = Convert.ToInt32(color.GetSaturation() * 100);
+                slider_brightness.Value = Convert.ToInt32(color.GetBrightness() * 100);
 
                 //set all labels
                 lbl_red.Text = Convert.ToString(color.R);
@@ -299,11 +299,11 @@ namespace Arduino_Serial_Host_CS
             else if (activeColorSpace == "HSB")
             {
                 //precalc
-                float Saturation = slider_saturation.Value / 1000;
-                float Brightness = slider_brightness.Value / 1000;
+                float Saturation = slider_saturation.Value * 0.01F;
+                float Brightness = slider_brightness.Value * 0.01F;
                 float Hue = slider_hue.Value;
                 //get the color
-                color = FromAhsb(255, Hue, color.GetSaturation(), color.GetBrightness());       //Very crappy thing but the "normal way it won't work ;("
+                color = FromAhsb(255, Hue, Saturation, Brightness);
                 //set other sliders
                 slider_red.Value = color.R;
                 slider_green.Value = color.G;
