@@ -270,7 +270,7 @@ namespace Arduino_Serial_Host_CS
         {
             if (Arduino_Port.IsOpen)
             {
-                timer_colorRefresh.Interval = fadeSpeed + 10;
+                timer_colorRefresh.Interval = fadeSpeed + 20;
 
                 setColorWithTime(color, fadeSpeed);
             }
