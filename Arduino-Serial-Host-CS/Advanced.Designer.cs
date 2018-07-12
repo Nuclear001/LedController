@@ -55,6 +55,7 @@
             this.btn_delay_down = new System.Windows.Forms.Button();
             this.btn_delay_up = new System.Windows.Forms.Button();
             this.lbl_delay = new System.Windows.Forms.Label();
+            this.btn_AverageDisplayColor_V3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_1_1)).BeginInit();
@@ -321,11 +322,26 @@
             this.lbl_delay.TabIndex = 35;
             this.lbl_delay.Text = "1000 ms";
             // 
+            // btn_AverageDisplayColor_V3
+            // 
+            this.btn_AverageDisplayColor_V3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(91)))));
+            this.btn_AverageDisplayColor_V3.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_AverageDisplayColor_V3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AverageDisplayColor_V3.Font = new System.Drawing.Font("Venus Rising Rg", 9.749999F);
+            this.btn_AverageDisplayColor_V3.ForeColor = System.Drawing.Color.Gray;
+            this.btn_AverageDisplayColor_V3.Location = new System.Drawing.Point(12, 500);
+            this.btn_AverageDisplayColor_V3.Name = "btn_AverageDisplayColor_V3";
+            this.btn_AverageDisplayColor_V3.Size = new System.Drawing.Size(221, 80);
+            this.btn_AverageDisplayColor_V3.TabIndex = 39;
+            this.btn_AverageDisplayColor_V3.Text = "Durchschnittliche Bildschirmfarbe V3";
+            this.btn_AverageDisplayColor_V3.UseVisualStyleBackColor = false;
+            // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(975, 614);
+            this.Controls.Add(this.btn_AverageDisplayColor_V3);
             this.Controls.Add(this.btn_delay_down);
             this.Controls.Add(this.btn_delay_up);
             this.Controls.Add(this.lbl_delay);
@@ -387,5 +403,6 @@
         private System.Windows.Forms.Button btn_delay_down;
         private System.Windows.Forms.Button btn_delay_up;
         private System.Windows.Forms.Label lbl_delay;
+        private System.Windows.Forms.Button btn_AverageDisplayColor_V3;
     }
 }

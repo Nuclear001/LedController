@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arduino-Serial-Host-CS", "Arduino-Serial-Host-CS\Arduino-Serial-Host-CS.csproj", "{966433C0-93B8-40C5-89E9-8FD9B547F119}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMixer", "Arduino-Serial-Host-CS\ColorMixer.csproj", "{966433C0-93B8-40C5-89E9-8FD9B547F119}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
